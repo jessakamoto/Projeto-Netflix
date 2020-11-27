@@ -21,31 +21,32 @@
 <body>
    <header>
        <div class="container">
-           <nav class="menu">
+           <nav class="menu-de-navegacao-principal">
+        
                <a href="https://www.netflix.com/browse"><img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="netflix logo" id="logo"/></a>
           
-                <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
+                <a href="#inicio">Início</a>
+                <a href="#series">Séries</a>
+                <a href="#filmes">Filmes</a>
                 <a href="#">Bombando</a>
                 <a href="#">Minha Lista</a>
-               
+
             </nav>
        </div>
    </header>
     
    <main>
-       <div class="filme-principal">
+       <div class="filme-principal" id="inicio">
             <div class="container">
                 <h3 class="titulo">Modern Family</h3>
                 <p class="descricao">Esta série de humor sarcástico e vencedora do Emmy acompanha a vida de Jay Pritchett e sua eclética família enquanto lidam com os desafios da vida contemporânea em Los Angeles.</p>
                 <div class="botoes">
                     <button role="button" class="botao">
-                        <i class="assistir-agora"></i>
+                        <i class="fas fa-play"></i>
                         <a href="https://www.youtube.com/watch?v=aogZUDx51vQ" target="_blank" class="assistir-agora">Assistir Agora</a>    
                     </button>
                     <button role="button" class="botao">
-                        <i class="mais-informacoes"></i>
+                        <i class="fas fa-info-circle"></i>
                         <a href="https://www.imdb.com/title/tt1442437/" target="_blank" class="mais-informacoes">Mais Informações</a> 
                     </button>
                  </div>
@@ -54,7 +55,7 @@
        
    </main>
    <div class="carousel-files-continue-assistindo">
-       <p class="inicio">Continuar assistindo como Jéssica</p>
+       <p class="inicio">Continuar assistindo de onde você parou</p>
        <div class="owl-carousel owl-theme">
            <div class="item">
               <a href="https://www.youtube.com/watch?v=0DAmWHxeoKw" target="_blank"><img src="img/mini1.jpg" alt="poster da séria The Umbrella Academy"></a> 
@@ -90,7 +91,7 @@
     
    <div class="carousel-files-series">
        <p class="series">Séries</p>
-       <div class="owl-carousel owl-theme">
+       <div class="owl-carousel owl-theme" id="series">
                 <div class="item">
                 <a href="https://www.youtube.com/watch?v=X4bF_quwNtw" target="_blank"><img src="img/mini11.jpg" alt="poster da série Lúcifer"></a> 
                 </div>
@@ -126,7 +127,7 @@
 
    <div class="corousel-files-filmes">
        <p class="filmes">Filmes</p>
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel owl-theme" id="filmes">
             <div class="item">
             <a href="https://www.youtube.com/watch?v=1d0Zf9sXlHk" target="_blank"><img src="img/mini21.jpg" alt="poster do filme Enola Holmes"></a> 
             </div>
