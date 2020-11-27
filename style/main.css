@@ -13,39 +13,42 @@
 
 body{
     background:var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color:white;
 }
 
 header .container{
-    display: flex;
+    display: inline-flexbox;
     flex-direction:row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 5px;
+    height: 0;
 }
 
-h2.logo{
-    margin-left: 5px;
-    color: var(--vermelho);
-    font-family: "Arial Black", Times;
-    font-size: 40px;
+header nav #logo{
+    display: inline-flexbox;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100px;
 }
 
 header nav a{
     text-decoration: none;
-    color: #AAA;
+    color: white;
     margin-right: 10px;
 }
 
 header nav a:hover{
-    color: #fff;
+    color: #ffffff54;
 }
 
 /*relacionado ao filme principal*/
 
 .filme-principal{
     font-size: 16px;
-    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-modernfamily.jpg');
+    background:linear-gradient(rgba(161, 154, 154, 0.5),rgba(0,0,0,.50)100%), url('/img/capa-modernfamily.jpg');
     height: 700px;
     background-size: cover;
     display: flex;
@@ -76,6 +79,18 @@ header nav a:hover{
     font-size: 1,6rem;
 } 
 
+.assistir-agora{
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+
+.mais-informacoes{
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+
 button:hover{
     background-color: rgba(0,0,0,.30);
     cursor: pointer;
@@ -98,4 +113,23 @@ i{
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carousel-files-continue-assistindo{
+    margin-top: 5px;
+}
+.continue-assistindo{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.carousel-files-continue-assistindo .item img{
+    border-radius: 5px;
+    border: none;
+}
+
+.carousel-files-continue-assistindo .item img:hover{
+    cursor: pointer;
 }
